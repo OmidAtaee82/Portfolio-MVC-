@@ -25,3 +25,7 @@ G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\refint\Portfolio.dll
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.pdb
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.genruntimeconfig.cache
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.sourcelink.json
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\xkilql7g7t-kb3out9fl2.gz
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\d56ho7dr7p-8ixfnatrue.gz
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vqjmkdi9lm-043hukyuek.gz

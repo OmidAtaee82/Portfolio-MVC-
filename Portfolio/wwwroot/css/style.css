@@ -1,0 +1,212 @@
+﻿*{
+    padding:0;
+    margin:0;
+    direction:ltr;
+}
+
+body {
+    background-color: #0d111c !important;
+}
+
+
+/* Sidebsr Admin */
+
+.container-18 {
+    width: 18%;
+    height: 100vh;
+}
+
+.container-84 {
+    width: 82%;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 18%;
+    z-index: 1;
+}
+
+.container-84-h-auto {
+    width: 82%;
+    height: 1200px;
+    position: absolute;
+    left: 18%;
+    top: 70px;
+    z-index: -1;
+}
+
+/* Chrome, Edge, Safari */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+/* Firefox */
+.sidebar {
+    scrollbar-width: none;
+}
+
+.m-p {
+    padding-top: 15px;
+    padding-bottom: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.item {
+    margin: auto;
+    margin-top: 35px;
+}
+
+.profile {
+    width: 53px;
+    height: 53px;
+    background-color: lime;
+    border-radius: 100%;
+    background-image: url("../img/omid.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-name {
+    margin-top: 15px !important;
+    font-size: 18px;
+}
+
+.text-role {
+    margin-top: -10px !important;
+    font-size: 14px;
+}
+
+
+.item-dashboard {
+    padding: 8px 0 8px 15px;
+}
+
+.icon-home {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/home.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-post {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/post.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-project {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/project.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-skills {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/skills.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-experience {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/experience.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-message {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/message.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-users {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/users.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-roles {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../img/roles.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* header admin */
+
+.light-mode {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+
+.input-search {
+    width: 250px;
+    height: 35px;
+    background-color: #131925;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+    display: flex;
+    border: 2px solid #1c202b;
+}
+
+.icon-search {
+    width: 27px;
+    height: 27px;
+    background-color: transparent;
+    background-image: url("../img/search.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.search {
+    width: 200px;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding-left: 8px;
+    color: #e5e5e6;
+}

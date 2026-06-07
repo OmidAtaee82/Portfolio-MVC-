@@ -4,16 +4,160 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 <body>
 
-    <header>admin header</header>
+    <div class="container-fluid p-0">
 
-    <div>
-        @RenderBody()
+        <!-- Sidebar Admin -->
+
+        <div class="container-18 position-fixed top-0 overflow-scroll sidebar m-p" style="background-color: #0e121e;border-right: 1px solid #1b202e">
+
+            <div class="m-auto">
+                <p style="font-size: 24px;color: #f4f4f8" class="fw-bold">
+                    <<span style="color: #823df8">/</span>>Omid<span style="color: #823df8">.dev</span>
+                </p>
+            </div>
+
+            <div class="item d-lg-flex align-items-center" style="min-height: 50px">
+
+                <div class="profile position-relative">
+                    <span class="w-25 h-25 rounded-5" style="position: absolute;top: 73%;left: 77%;background-color: #41d92c"></span>
+                </div>
+
+                <div class="d-lg-flex flex-wrap justify-content-center align-items-center">
+                    <p class="w-75 text-name" style="color: #f4f4f8">Omid Ataei</p>
+                    <p class="w-75 text-role" style="color: #e5e5e6">Admin</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-angle-down" style="color: #e5e5e6"></i>
+                </div>
+
+            </div>
+
+            <p class="mt-4" style="color: #e5e5e6">MAIN</p>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3" style="background-color: #6538ed">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-home"></span>
+                    <span class="ps-3">Dashboard</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-post"></span>
+                    <span class="ps-3">Posts</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-project"></span>
+                    <span class="ps-3">Projects</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-skills"></span>
+                    <span class="ps-3">Skills</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-experience"></span>
+                    <span class="ps-3">Experience</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-message"></span>
+                    <span class="ps-3">Message</span>
+                </a>
+
+            </div>
+
+
+            <p class="mt-5" style="color: #e5e5e6">USERS & ACCESS</p>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-users"></span>
+                    <span class="ps-3">Message</span>
+                </a>
+
+            </div>
+
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+
+                <a href="#" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
+                    <span class="icon-roles"></span>
+                    <span class="ps-3">Message</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Header Admin -->
+
+        <div class="container-84 m-p shadow-xl" style="background-color: #0e121e">
+
+            <div class="m-auto d-lg-flex justify-content-lg-between" style="min-height: 30px">
+
+                <div class="d-lg-flex flex-column" style="min-height: 20px;">
+                    <span style="font-size: 24px;color: #f4f4f8;">Dashboard</span>
+                    <span style="color: #e5e5e6">Welcome back , <span style="color: #5327c4">Mehdi</span> !</span>
+                </div>
+
+                <div class="d-lg-flex justify-content-end align-items-center gap-4 w-75">
+
+                    <div class="input-search">
+                        <div class="icon-search"></div>
+                        <input type="text" class="search" placeholder="search anything" />
+                    </div>
+
+                    <div class="light-mode">
+                        <img src="/img/light.png" alt="" class="w-100">
+                        <!-- <img src="img/dark.png" alt="" class="w-100"> -->
+                    </div>
+
+                    <div class="profile position-relative">
+                        <!-- <img src="img/omid.jpg" class="rounded-5" alt="" style="width: 53px;height: 53px"/> -->
+                        <span class="w-25 h-25 rounded-5" style="position: absolute;top: 73%;left: 77%;background-color: lime"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+
     </div>
 
-    <footer>admin footer</footer>
-
+    <script src="~/js/bootstrap.min.js"></script>
 </body>
 </html>
