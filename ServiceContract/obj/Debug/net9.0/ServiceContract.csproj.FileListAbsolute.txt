@@ -1,0 +1,12 @@
+G:\proje-DotNet\Portfolio\ServiceContract\bin\Debug\net9.0\ServiceContract.deps.json
+G:\proje-DotNet\Portfolio\ServiceContract\bin\Debug\net9.0\ServiceContract.dll
+G:\proje-DotNet\Portfolio\ServiceContract\bin\Debug\net9.0\ServiceContract.pdb
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.GeneratedMSBuildEditorConfig.editorconfig
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.AssemblyInfoInputs.cache
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.AssemblyInfo.cs
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.csproj.CoreCompileInputs.cache
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.sourcelink.json
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.dll
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\refint\ServiceContract.dll
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ServiceContract.pdb
+G:\proje-DotNet\Portfolio\ServiceContract\obj\Debug\net9.0\ref\ServiceContract.dll
