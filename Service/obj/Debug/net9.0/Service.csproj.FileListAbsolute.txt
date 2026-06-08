@@ -1,18 +1,9 @@
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.deps.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.runtimeconfig.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\appsettings.Development.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\appsettings.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.staticwebassets.runtime.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.staticwebassets.endpoints.json
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.exe
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Service.deps.json
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Service.dll
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Service.pdb
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Entites.dll
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.dll
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\ServiceContract.dll
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Entites.pdb
-G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Portfolio.pdb
 G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\ServiceContract.pdb
 G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\Service.csproj.AssemblyReference.cache
 G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\Service.GeneratedMSBuildEditorConfig.editorconfig
@@ -25,3 +16,5 @@ G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\Service.dll
 G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\refint\Service.dll
 G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\Service.pdb
 G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\ref\Service.dll
+G:\proje-DotNet\Portfolio\Service\bin\Debug\net9.0\Service.runtimeconfig.json
+G:\proje-DotNet\Portfolio\Service\obj\Debug\net9.0\Service.genruntimeconfig.cache

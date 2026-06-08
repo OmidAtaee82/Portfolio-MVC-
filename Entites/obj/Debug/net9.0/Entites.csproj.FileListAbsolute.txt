@@ -11,3 +11,5 @@ G:\proje-DotNet\Portfolio\Entites\obj\Debug\net9.0\Entites.dll
 G:\proje-DotNet\Portfolio\Entites\obj\Debug\net9.0\refint\Entites.dll
 G:\proje-DotNet\Portfolio\Entites\obj\Debug\net9.0\Entites.pdb
 G:\proje-DotNet\Portfolio\Entites\obj\Debug\net9.0\ref\Entites.dll
+G:\proje-DotNet\Portfolio\Entites\bin\Debug\net9.0\Entites.runtimeconfig.json
+G:\proje-DotNet\Portfolio\Entites\obj\Debug\net9.0\Entites.genruntimeconfig.cache
