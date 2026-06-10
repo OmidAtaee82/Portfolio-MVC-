@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Posts/Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Posts/PostCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

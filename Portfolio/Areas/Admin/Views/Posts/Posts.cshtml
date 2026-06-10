@@ -55,14 +55,14 @@
                         <td class="td">@item.Email</td>
                         <td class="td">@item.Location</td>
                         <td class="td">
-                            <span class="rounded-2 fw-bold (@item.Frelancer ? freelancer_true : freelancer_false)">@item.Frelancer</span>
+                            <span class="rounded-2 fw-bold @(item.Frelancer ? "freelancer_true" : "freelancer_false")">@item.Frelancer</span>
                         </td>
                         <td class="td">@item.Description</td>
                         <td class="td">
 
                             <div class="d-lg-flex gap-2">
 
-                                <a href="#">
+                                <a href="/admin/posts/@item.Id">
                                     <div class="d-lg-flex align-items-lg-center justify-content-lg-center rounded-2" style="width: 30px;height: 30px;background-color: #010133">
                                         <svg style="color: #6a6af8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="25" height="25">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />

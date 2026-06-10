@@ -10,7 +10,9 @@ namespace ServiceContract
     public interface IPostService
     {
 
-        List<AboutMe> GetAll();
+        List<AboutMe> GetAllPost();
+        AboutMe GetPost(int id);
+        void AddPost(AboutMe model);
 
     }
 }

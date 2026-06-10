@@ -19,7 +19,7 @@ namespace Service
             _portfolioDB = portfolioDB;
         }
 
-        public List<AboutMe> GetAll()
+        public List<AboutMe> GetAllPost()
         {
             var result = _portfolioDB.AboutMe.Select(x => new AboutMe
             {
@@ -35,8 +35,14 @@ namespace Service
 
         }
 
+        public AboutMe GetPost(int id)
+        {
+            var result = _portfolioDB.AboutMe.FirstOrDefault(x=>x.Id == id);
+            return result;
+        }
 
-        public void CreatePost(AboutMe model)
+
+        public void AddPost(AboutMe model)
         {
              _portfolioDB.AboutMe.Add(model);
             _portfolioDB.SaveChanges();
