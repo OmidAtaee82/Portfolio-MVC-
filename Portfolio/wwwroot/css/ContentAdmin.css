@@ -1,0 +1,25 @@
+﻿.th {
+    color: #5a3ff1 !important;
+}
+
+.td {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.freelancer_true {
+    padding: 5px 10px 5px 10px;
+    background-color: #152624;
+    color: #61b36a;
+    border: 2px solid #61b36a;
+}
+
+.freelancer_false {
+    padding: 5px 10px 5px 10px;
+    background-color: #291818;
+    color: #b36161;
+    border: 2px solid #b36161;
+}

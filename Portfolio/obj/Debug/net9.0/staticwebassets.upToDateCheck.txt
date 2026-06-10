@@ -1,7 +1,9 @@
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\bootstrap.min.js
+G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\ContentAdmin.css
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\style.css
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\bootstrap.min.css
 wwwroot\css\bootstrap.min.css
+wwwroot\css\ContentAdmin.css
 wwwroot\css\style.css
 wwwroot\img\dark.png
 wwwroot\img\experience.png

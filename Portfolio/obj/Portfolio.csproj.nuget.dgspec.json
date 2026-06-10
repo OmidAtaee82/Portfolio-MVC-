@@ -206,7 +206,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\proje-DotNet\\Portfolio\\Entites\\Entites.csproj": {
+                "projectPath": "G:\\proje-DotNet\\Portfolio\\Entites\\Entites.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
