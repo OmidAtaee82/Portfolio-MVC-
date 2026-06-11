@@ -1,3 +1,4 @@
+G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\code.js
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\bootstrap.min.js
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\ContentAdmin.css
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\style.css
@@ -18,3 +19,4 @@ wwwroot\img\search.png
 wwwroot\img\skills.png
 wwwroot\img\users.png
 wwwroot\js\bootstrap.min.js
+wwwroot\js\code.js

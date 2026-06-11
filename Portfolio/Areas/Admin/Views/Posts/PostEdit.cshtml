@@ -1,0 +1,69 @@
+﻿@model AboutMe
+
+@{
+    ViewBag.Title = "Post Edit";
+}
+
+<div class="container-84-h-auto">
+
+    <div class="col-lg-11 d-lg-flex justify-content-lg-between align-items-lg-center" style="margin: auto;margin-top: 75px">
+
+        <div class="text-white">
+            <h3>Create New Post</h3>
+            <h5>Share your thoughts with the world</h5>
+        </div>
+
+        <div>
+            <a asp-controller="posts" asp-action="posts" class="text-decoration-none text-white rounded-2" style="padding: 10px 15px 10px 15px;border: 2px solid #222a33">
+                <i class="fa fa-arrow-left me-2"></i>Back to Posts
+            </a>
+        </div>
+
+    </div>
+
+    <div class="col-lg-11 shadow-lg text-white p-3 rounded-4 m-auto mt-4" style="background-color: #121824;border: 2px solid #1b202e">
+
+        <form method="post" action="/admin/posts/edit/@Model.Id">
+
+            <div class="mb-3 d-lg-flex justify-content-lg-between">
+
+                <div class="col-lg-5">
+                    <label class="form-label">Name <span class="text-danger">*</span> </label>
+                    <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="example : Omid Ataei" />
+                </div>
+
+                <div class="col-lg-5">
+                    <label class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" name="Email" value="@Model.Email" class="form-control" placeholder="example : omid@gmail.com">
+                </div>
+
+            </div>
+
+            <div class="mb-3 d-lg-flex justify-content-lg-between">
+
+                <div class="col-lg-5">
+                    <label class="form-label">Location <span class="text-danger">*</span> </label>
+                    <input type="text" name="Location" value="@Model.Location" class="form-control" placeholder="Example : Tehran,Iran" />
+                </div>
+
+                <div class="col-lg-5 form-check" style="margin-top: 40px">
+                    <input class="form-check-input" type="checkbox" name="Frelancer" value="true" @(Model.Frelancer ? "checked" : "") />
+                    <label class="form-check-label">
+                        Are You Freelancer ?
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description <span class="text-danger">*</span> </label>
+                <textarea name="Description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Explain about yourself">@Model.Description</textarea>
+            </div>
+
+            <input type="submit" value="Update" class="border-0 rounded-3" style="padding: 8px 30px 8px 30px;background-color: yellow" />
+
+        </form>
+
+    </div>
+
+</div>

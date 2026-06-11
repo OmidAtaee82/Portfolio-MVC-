@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Posts/PostEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Posts/Posts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

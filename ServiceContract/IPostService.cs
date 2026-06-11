@@ -13,6 +13,8 @@ namespace ServiceContract
         List<AboutMe> GetAllPost();
         AboutMe GetPost(int id);
         void AddPost(AboutMe model);
+        void UpdatePost(AboutMe model);
+        void DeletePost(int id);
 
     }
 }

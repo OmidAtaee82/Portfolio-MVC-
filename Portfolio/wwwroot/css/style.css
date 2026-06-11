@@ -43,6 +43,10 @@ body {
     scrollbar-width: none;
 }
 
+.bg-sidebar {
+    background-color: #6538ed;
+}
+
 .m-p {
     padding-top: 15px;
     padding-bottom: 21px;

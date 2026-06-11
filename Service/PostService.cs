@@ -48,5 +48,36 @@ namespace Service
             _portfolioDB.SaveChanges();
         }
 
+        
+        public void UpdatePost(AboutMe model)
+        {
+            var post = _portfolioDB.AboutMe.First(x=>x.Id == model.Id);
+
+            if(post != null)
+            {
+                post.Name = model.Name;
+                post.Email = model.Email;
+                post.Location = model.Location;
+                post.Frelancer = model.Frelancer;
+                post.Description = model.Description;
+            }
+
+            _portfolioDB.SaveChanges();
+
+        }
+
+
+        public void DeletePost(int id)
+        {
+            var post = _portfolioDB.AboutMe.First(x=>x.Id == id);
+            
+            if(post != null)
+            {
+                _portfolioDB.AboutMe.Remove(post);
+            }
+
+            _portfolioDB.SaveChanges();
+        }
+
     }
 }

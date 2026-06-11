@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+}
+
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -42,7 +47,7 @@
 
             <p class="mt-4" style="color: #e5e5e6">MAIN</p>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3" style="background-color: #6538ed">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Dashboard" ? "bg-sidebar" : "")">
 
                 <a href="/admin/dashboard" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-home"></span>
@@ -51,7 +56,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Posts" ? "bg-sidebar" : "")">
 
                 <a href="/admin/posts" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-post"></span>
@@ -60,7 +65,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Projects" ? "bg-sidebar" : "")">
 
                 <a href="/admin/projects" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-project"></span>
@@ -69,7 +74,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Skills" ? "bg-sidebar" : "")">
 
                 <a href="/admin/skills" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-skills"></span>
@@ -78,7 +83,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Experience" ? "bg-sidebar" : "")">
 
                 <a href="/admin/experience" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-experience"></span>
@@ -87,7 +92,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3">
+            <div class="w-100 mt-3 item-dashboard rounded-3 mb-3 @(controller == "Message" ? "bg-sidebar" : "")">
 
                 <a href="/admin/message" class="w-100 d-lg-flex align-items-center m-auto text-decoration-none" style="color: #e5e5e6">
                     <span class="icon-message"></span>
@@ -160,5 +165,6 @@
     </div>
 
     <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/code.js"></script>
 </body>
 </html>

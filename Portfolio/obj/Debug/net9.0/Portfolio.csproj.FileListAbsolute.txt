@@ -28,7 +28,6 @@ G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.sourcelink.json
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\xkilql7g7t-kb3out9fl2.gz
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\d56ho7dr7p-8ixfnatrue.gz
-G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vqjmkdi9lm-qj9ux7gstc.gz
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Azure.Core.dll
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Azure.Identity.dll
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -159,3 +158,5 @@ G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnaly
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Service.dll
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Service.pdb
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\hg6d6u59bf-vlr8ojzria.gz
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\cj2cu8xhps-62iayt5ux9.gz
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vqjmkdi9lm-ewy3xhv0pc.gz

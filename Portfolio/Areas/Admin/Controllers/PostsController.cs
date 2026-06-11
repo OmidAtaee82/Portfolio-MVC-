@@ -49,5 +49,39 @@ namespace Portfolio.Areas.Admin.Controllers
 
         }
 
+
+        [HttpGet]
+        [Route("/admin/posts/edit/{id}")]
+        public IActionResult PostEdit(int id)
+        {
+            var result = _postService.GetPost(id);
+            return View(result);
+        }
+
+        [HttpPost]
+        [Route("/admin/posts/edit/{id}")]
+        public IActionResult PostEdit(AboutMe model)
+        {
+            var getPost = _postService.GetPost(model.Id);
+
+            if(getPost != null)
+            {
+                _postService.UpdatePost(model);
+            }
+
+            return RedirectToAction("Posts");
+
+        }
+
+        [HttpPost]
+        [Route("/admin/posts/delete/{id}")]
+        public IActionResult PostDelete(int id)
+        {
+
+            _postService.DeletePost(id);
+            return RedirectToAction("Posts");
+            
+        }
+
     }
 }
