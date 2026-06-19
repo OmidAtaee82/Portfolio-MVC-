@@ -6,6 +6,7 @@ G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\bootstrap.min.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\ContentAdmin.css
 wwwroot\css\style.css
+wwwroot\img\4.jpg
 wwwroot\img\dark.png
 wwwroot\img\experience.png
 wwwroot\img\home.png

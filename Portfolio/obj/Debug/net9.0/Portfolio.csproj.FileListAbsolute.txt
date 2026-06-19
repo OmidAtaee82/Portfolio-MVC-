@@ -158,5 +158,5 @@ G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnaly
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Service.dll
 G:\proje-DotNet\Portfolio\Portfolio\bin\Debug\net9.0\Service.pdb
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\hg6d6u59bf-vlr8ojzria.gz
-G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\cj2cu8xhps-62iayt5ux9.gz
 G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vqjmkdi9lm-ewy3xhv0pc.gz
+G:\proje-DotNet\Portfolio\Portfolio\obj\Debug\net9.0\compressed\cj2cu8xhps-bv9a4z6c2e.gz
