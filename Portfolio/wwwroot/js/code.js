@@ -15,25 +15,3 @@ deleteButtons.forEach(button => {
     })
 
 })
-
-
-const viewButton = document.querySelectorAll(".ViewBtn");
-
-const viewName = document.getElementById("ViewName");
-const viewImage = document.getElementById("ViewImage");
-
-viewButton.forEach(button => {
-
-    button.addEventListener("click", function () {
-
-        console.log("omid ataei");
-
-        const name = this.dataset.name;
-        const image = this.dataset.image;
-
-        viewName.innerText = "Name : " + name;
-        viewImage.src = image;
-
-    });
-
-});

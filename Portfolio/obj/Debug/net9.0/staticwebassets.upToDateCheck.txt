@@ -1,12 +1,16 @@
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\code.js
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\bootstrap.min.js
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\ContentAdmin.css
+G:\proje-DotNet\Portfolio\Portfolio\wwwroot\js\skills.js
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\style.css
 G:\proje-DotNet\Portfolio\Portfolio\wwwroot\css\bootstrap.min.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\ContentAdmin.css
 wwwroot\css\style.css
+wwwroot\img\19.jpg
+wwwroot\img\35.jpg
 wwwroot\img\4.jpg
+wwwroot\img\6.jpg
 wwwroot\img\dark.png
 wwwroot\img\experience.png
 wwwroot\img\home.png
@@ -21,3 +25,4 @@ wwwroot\img\skills.png
 wwwroot\img\users.png
 wwwroot\js\bootstrap.min.js
 wwwroot\js\code.js
+wwwroot\js\skills.js

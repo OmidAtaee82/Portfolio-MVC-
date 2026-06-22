@@ -30,15 +30,6 @@ namespace Portfolio.Areas.Admin.Controllers
 
 
         [HttpGet]
-        [Route("/admin/skills/{id}")]
-        public IActionResult Skill(int id)
-        {
-            var result = _skillService.GetSkill(id);
-            return View(result);
-        }
-
-
-        [HttpGet]
         [Route("/admin/skills/create")]
         public IActionResult SkillCreate()
         {
@@ -65,9 +56,72 @@ namespace Portfolio.Areas.Admin.Controllers
             }
 
             _skillService.AddSkill(model);
-            return RedirectToAction("SkillCreate");
+            return RedirectToAction("Skills");
 
         }
+
+
+        [HttpGet]
+        [Route("/admin/skills/edit/{id}")]
+
+        public IActionResult SkillEdit(int id)
+        {
+
+            var result = _skillService.GetSkill(id);
+            return View(result);
+        }
+
+        [HttpPost]
+        [Route("/admin/skills/edit/{id}")]
+        
+        public IActionResult SkillEdit(Skills model , IFormFile file)
+        {
+
+            var get_skill = _skillService.GetSkill(model.Id);
+
+            if(get_skill != null)
+            {
+                if (file != null)
+                {
+                    string filename = file.FileName;
+                    string path = Path.Combine(_env.WebRootPath, "img", filename);
+
+                    using (var path_file = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(path_file);
+                    }
+
+                    model.Image = "/img/" + filename;
+
+                }
+                else
+                {
+                    model.Image = get_skill.Image;
+                }
+            }
+
+            _skillService.UpdateSkill(model);
+            return RedirectToAction("Skills");
+
+        }
+
+
+        [HttpPost]
+        [Route("/admin/skills/delete/{id}")]
+        public IActionResult DelteSkill(int id)
+        {
+
+            var get_skill = _skillService.GetSkill(id);
+
+            if(get_skill != null)
+            {
+                _skillService.DeleteSkill(id);
+            }
+
+            return RedirectToAction("Skills");
+
+        }
+
 
     }
 }

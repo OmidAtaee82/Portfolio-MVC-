@@ -48,5 +48,35 @@ namespace Service
             _portfolioDB.SaveChanges();
         }
 
+
+        public void UpdateSkill(Skills model)
+        {
+
+            var skill = _portfolioDB.Skills.FirstOrDefault(x=>x.Id == model.Id);
+
+            if(skill != null)
+            {
+                skill.Name = model.Name;
+                skill.Image = model.Image;
+            }
+
+            _portfolioDB.SaveChanges();
+
+        }
+
+
+        public void DeleteSkill(int id)
+        {
+            var skill = _portfolioDB.Skills.FirstOrDefault(x => x.Id == id);
+            
+            if(skill != null)
+            {
+                _portfolioDB.Skills.Remove(skill);
+            }
+
+            _portfolioDB.SaveChanges();
+
+        }
+
     }
 }
