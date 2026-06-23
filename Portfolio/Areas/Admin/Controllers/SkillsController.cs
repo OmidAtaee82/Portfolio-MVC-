@@ -22,10 +22,32 @@ namespace Portfolio.Areas.Admin.Controllers
 
         [HttpGet]
         [Route("/admin/skills")]
-        public IActionResult Skills()
+        public IActionResult Skills(string searchText)
         {
-            var result = _skillService.GetAllSkills();
-            return View(result);
+            //var result = _skillService.GetAllSkills();
+            //return View(result);
+            ViewBag.searchText = searchText;
+
+            List<Skills> skills;
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                skills = _skillService.SearchSkills(searchText);
+
+                if(!skills.Any())
+                {
+                    ViewBag.Message = "Not Found Data ...";
+                    skills = _skillService.GetAllSkills();
+                }
+
+            }
+            else
+            {
+                skills = _skillService.GetAllSkills();
+            }
+
+            return View(skills);
+
         }
 
 
@@ -41,12 +63,12 @@ namespace Portfolio.Areas.Admin.Controllers
         public IActionResult SkillCreate(Skills model , IFormFile file)
         {
 
-            if(file != null)
+            if (file != null)
             {
                 string filename = file.FileName;
-                string path = Path.Combine(_env.WebRootPath , "img" , filename);
+                string path = Path.Combine(_env.WebRootPath, "img", filename);
 
-                using (var path_file = new FileStream(path , FileMode.Create))
+                using (var path_file = new FileStream(path, FileMode.Create))
                 {
                     file.CopyTo(path_file);
                 }

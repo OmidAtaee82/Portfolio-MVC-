@@ -13,6 +13,7 @@ namespace ServiceContract
         List<Skills> GetAllSkills();
         Skills GetSkill(int id);
         void AddSkill(Skills model);
+        List<Skills> SearchSkills(string searchText);
         void UpdateSkill(Skills model);
         void DeleteSkill(int id);
 

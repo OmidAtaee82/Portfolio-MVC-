@@ -42,6 +42,20 @@ namespace Service
         }
 
 
+        public List<Skills> SearchSkills(string searchText)
+        {
+
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                return _portfolioDB.Skills.Where(x=>x.Name.Contains(searchText)).ToList();
+            }
+
+            return _portfolioDB.Skills.ToList();
+
+        }
+
+
         public void AddSkill(Skills model)
         {
             _portfolioDB.Skills.Add(model);

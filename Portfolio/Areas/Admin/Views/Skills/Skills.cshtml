@@ -15,10 +15,12 @@
 
         <div class="d-lg-flex gap-4 align-items-lg-center">
 
-            <div class="input-search shadow-lg" style="border: 2px solid #222a33">
-                <div class="icon-search"></div>
-                <input type="text" class="search" placeholder="search contact" />
-            </div>
+            <form method="get">
+                <div class="input-search shadow-lg" style="border: 2px solid #222a33">
+                    <div class="icon-search"></div>
+                    <input type="text" value="@ViewBag.searchText" name="searchText" class="search" placeholder="search contact" />
+                </div>
+            </form>
 
             <a asp-area="admin" asp-controller="Skills" asp-action="SkillCreate" class="text-decoration-none text-white rounded-2" style="background-color: #6538ed;padding: 10px 15px 10px 15px;">
                 <i class="fa fa-plus"></i>New Posts
@@ -29,6 +31,13 @@
     </div>
 
     <div class="shadow-lg text-white p-3 m-auto mt-4" style="width: 95%">
+
+        @if(ViewBag.Message != null)
+        {
+            <p class="text-danger" style="font-size:16px;">
+                The item you are looking for was not found.
+            </p>
+        }
 
         <table class="table align-middle table-hover m-auto rounded-3">
 
