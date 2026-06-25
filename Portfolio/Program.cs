@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IPostService , PostService>();
 builder.Services.AddScoped<ISkillService , SkillService>();
+builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddDbContext<PortfolioDB>(optionsAction =>
 {
     optionsAction.UseSqlServer(builder.Configuration.GetConnectionString("DedaultConnection"));

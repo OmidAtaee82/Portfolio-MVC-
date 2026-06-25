@@ -48,6 +48,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcUG9zdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Projects/Proje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdHNcUHJvamUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Projects/ProjectCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdHNcUHJvamVjdENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Projects/ProjectEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdHNcUHJvamVjdEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Projects/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdHNcUHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/proje-DotNet/Portfolio/Portfolio/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

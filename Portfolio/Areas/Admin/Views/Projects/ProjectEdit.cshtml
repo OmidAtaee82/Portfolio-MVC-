@@ -1,0 +1,51 @@
+﻿@model Projects
+
+@{
+    ViewBag.Title = "Project Edit";
+}
+
+<div class="container-84-h-auto">
+
+    <div class="col-lg-11 d-lg-flex justify-content-lg-between align-items-lg-center" style="margin: auto;margin-top: 75px">
+
+        <div class="text-white">
+            <h3>Create New Project</h3>
+            <h5>Add a new project to your portfolio</h5>
+        </div>
+
+        <div>
+            <a asp-area="Admin" asp-controller="Projects" asp-action="Projects" class="text-decoration-none text-white rounded-2" style="padding: 10px 15px 10px 15px;border: 2px solid #222a33">
+                <i class="fa fa-arrow-left me-2"></i>Back to Projects
+            </a>
+        </div>
+
+    </div>
+
+    <form method="post" action="/admin/projects/edit/@Model.Id" enctype="multipart/form-data">
+        <div class="col-lg-11 shadow-lg text-white p-3 rounded-4 m-auto mt-4" style="background-color: #121824;border: 2px solid #1b202e">
+
+            <div class="mb-3">
+                <label class="form-label">Name <span class="text-danger">*</span> </label>
+                <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="example : Omid Ataei" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Description <span class="text-danger">*</span> </label>
+                <textarea class="form-control" name="Description" rows="3" placeholder="Brief explanation of the project">@Model.Description</textarea>
+            </div>
+
+            <div class="mb-3">
+                <img src="@Model.Image" alt="" class="rounded-3" style="width:150px;height:150px">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Image <span class="text-danger">*</span> </label>
+                <input type="file" name="file" class="form-control" />
+            </div>
+
+            <input type="submit" value="Save" class="border-0 rounded-3 mt-3" style="padding: 8px 30px 8px 30px;background-color: #07db07" />
+
+        </div>
+    </form>
+
+</div>

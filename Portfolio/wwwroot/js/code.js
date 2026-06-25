@@ -15,3 +15,28 @@ deleteButtons.forEach(button => {
     })
 
 })
+
+
+// delete modal project
+
+const deleteButtonProject = document.querySelectorAll(".btn-delete-project");
+const formDeleteProject = document.getElementById("form-delete-project");
+const deleteMessageProject = document.getElementById("text-delete-project");
+
+deleteButtonProject.forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+
+        console.log("click ...")
+
+        e.preventDefault();
+
+        const id = this.dataset.id;
+        const name = this.dataset.name;
+        deleteMessageProject.innerText = `Are you sure you want to delete ${name}?`
+        formDeleteProject.action = `/admin/projects/delete/${id}`
+
+    })
+
+})
