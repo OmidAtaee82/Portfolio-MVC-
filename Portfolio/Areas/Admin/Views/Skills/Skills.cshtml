@@ -52,10 +52,15 @@
 
             <tbody>
 
+                @{
+                    int count = 1;
+                }
+
                 @foreach(var item in Model)
                 {
                     <tr>
-                        <td class="td" style="padding-left: 30px">@item.Id</td>
+                        <td class="td" style="padding-left: 30px">@count</td>
+                        @{count++;}
                         <td class="td">@item.Name</td>
                         <td class="td">
                             <img src="@item.Image" alt="" style="width: 30px;height: 30px">

@@ -18,10 +18,23 @@ namespace Portfolio.Areas.Admin.Controllers
         }
 
         [Route("/admin/projects")]
-        public IActionResult Projects()
+        public IActionResult Projects(string searchText)
         {
-            var result = _projectService.GetAllProjects();
-            return View(result);
+
+            ViewBag.searchText = searchText;
+
+            List<Projects> projects;
+
+            if(!string.IsNullOrEmpty(searchText))
+            {
+                projects = _projectService.ProjectSearch(searchText);
+            }
+            else
+            {
+                projects = _projectService.GetAllProjects();
+            }
+
+            return View(projects);
         }
 
         [Route("/admin/projects/{id}")]

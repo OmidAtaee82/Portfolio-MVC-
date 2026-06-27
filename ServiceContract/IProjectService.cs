@@ -15,6 +15,7 @@ namespace ServiceContract
         void AddProject(Projects model);
         void UpdateProject(Projects model);
         void DeleteProject(int id);
+        List<Projects> ProjectSearch(string searchText);
 
     }
 }

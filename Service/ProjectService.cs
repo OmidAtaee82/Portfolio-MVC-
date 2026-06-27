@@ -84,5 +84,20 @@ namespace Service
 
         }
 
+
+        public List<Projects> ProjectSearch(string searchText)
+        {
+
+            if(!string.IsNullOrEmpty(searchText))
+            {
+                return _portfolioDb.Projects.Where(x=>x.Name.Contains(searchText)).ToList();
+            }
+            else
+            {
+                return GetAllProjects();
+            }
+
+        }
+
     }
 }

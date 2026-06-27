@@ -40,3 +40,26 @@ deleteButtonProject.forEach(button => {
     })
 
 })
+
+
+// delete modal experience
+const btnDelExperience = document.querySelectorAll(".btn-del-experience");
+const formDelExperience = document.getElementById("form-delete-experience");
+const txtDelExperience = document.getElementById("text-delete-experience");
+
+btnDelExperience.forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const id = this.dataset.id;
+        const name = this.dataset.name;
+
+        txtDelExperience.innerText = `Do you intend to delete the item with the ID number ${id}?`
+
+        formDelExperience.action = `/admin/experience/delete/${id}`
+
+    })
+
+})

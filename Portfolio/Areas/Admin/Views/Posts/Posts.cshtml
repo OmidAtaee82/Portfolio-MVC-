@@ -47,10 +47,15 @@
 
             <tbody>
 
+                @{
+                    int count = 1;
+                }
+
                 @foreach(var item in Model)
                 {
                     <tr>
-                        <td class="td">@item.Id</td>
+                        <td class="td">@count</td>
+                        @{count++;}
                         <td class="td">@item.Name</td>
                         <td class="td">@item.Email</td>
                         <td class="td">@item.Location</td>
