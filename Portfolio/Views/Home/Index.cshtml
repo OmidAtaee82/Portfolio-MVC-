@@ -1,3 +1,18 @@
-﻿<h1>
-    Home Page
-</h1>
+﻿@model Portfolio.models.HomeViewModel
+
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+
+<!-- Introduction -->
+
+@await Html.PartialAsync("_Introduction");
+
+<!-- About Me -->
+
+@await Html.PartialAsync("_AboutMe" , Model.aboutMe);
+
+<!-- Skills -->
+
+@await Html.PartialAsync("_Skills");
