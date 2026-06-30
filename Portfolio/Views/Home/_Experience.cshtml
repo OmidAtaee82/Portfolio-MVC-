@@ -1,0 +1,85 @@
+﻿@model List<Experience>
+
+<div class="container-fluid" id="experience">
+
+    <div class="container_3">
+
+        <div class="col-lg-7 col-12 m-lg-0 m-auto" data-aos="zoom-in" data-aos-duration="2000">
+
+            <div class="col-lg-10 ps-lg-4 pt-lg-3 pb-lg-4 ps-4 pt-3 rounded-3" style="background-color: #141824;border: 2.5px solid #21293e">
+
+                <div class="d-flex align-items-center gap-2 text-white">
+                    <div class="circle"></div>
+                    <p style="font-size: 20px">Experience</p>
+                </div>
+
+                @foreach(var item in Model)
+                {
+                    <div class="d-flex experience mt-2">
+
+                        <div class="shape">
+                            <div class="circle2"></div>
+                        </div>
+
+                        <div class="col-lg-10 col-10">
+
+                            <div class="col-12 mt-lg-3 d-flex align-items-center justify-content-between">
+
+                                <div class="title-experience text-white">@item.Expertise</div>
+                                <div class="fw-bold d-lg-block d-none" style="font-size: 14px;color: #8253f1">julay 2023 - Dss 2024</div>
+                                <div class="fw-bold d-lg-none d-block" style="font-size: 14px;color: #8253f1">2023-2024</div>
+
+                            </div>
+
+                            <div class="col-12 mt-lg-4 mt-3" style="font-size: 16px;color: #d8d9de">@item.NameCompany</div>
+
+                            <div class="col-12 mt-lg-4 mt-3" style="font-size: 15px;color: #d8d9de">@item.Description</div>
+
+                        </div>
+
+                    </div>
+                }
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 col-12 pe-lg-4 ps-lg-0 mt-lg-0 mt-3" data-aos="zoom-in" data-aos-duration="2000">
+
+            <div class="col-lg-12 pt-lg-3 ps-lg-3 pe-lg-3 pb-lg-3 ps-3 pe-3 pt-3 pb-3 rounded-3" style="background-color: #141824;border: 2.5px solid #21293e">
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="circle"></div>
+                    <p class="text-white" style="font-size: 20px;">Contact Me</p>
+                </div>
+
+                <div class="col-lg-12 col-12 mt-lg-3">
+
+                    <form method="post" action="">
+
+                        <div class="d-flex gap-3">
+                            <input type="text" class="form-control input-contact" placeholder="Your Name" />
+                            <input type="text" class="form-control input-contact" placeholder="Your Email" />
+                        </div>
+
+                        <div>
+                            <input type="text" placeholder="Subject" class="mt-2 form-control input-contact" />
+                        </div>
+
+                        <div class="mt-2">
+                            <textarea placeholder="Your Message" class="form-control input-contact"></textarea>
+                        </div>
+
+                        <input type="submit" value="Send Message" class="mt-2 col-12 p-2 text-white border-0 rounded-2" style="background-color: #683fe5" />
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

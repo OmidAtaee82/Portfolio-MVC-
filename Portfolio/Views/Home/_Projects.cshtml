@@ -1,0 +1,72 @@
+﻿@model List<Projects>
+
+<div class="container-fluid" id="projects">
+
+    <div class="container_2 pb-4">
+
+        <div class="col-lg-12 col-12 box-title d-flex justify-content-between align-items-center gap-2 fw-bold">
+
+            <div class="d-flex align-items-center gap-2 fw-bold text-white">
+                <div class="circle" style="margin-top: 2px"></div>
+                Projects
+            </div>
+
+            <a href="#" class="text-decoration-none">
+                <div class="d-lg-block d-none" style="color: #804afa">
+                    View All Projects
+                    <svg style="width: 20px;height: 20px;margin-right: 25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="col-12 col-lg-12 d-flex flex-wrap justify-content-between gap-lg-2 gap-3 pt-3 m-auto mt-lg-4 ps-4 pe-4">
+
+            @foreach(var item in Model)
+            {
+                <div class="box-project" data-aos="fade-up" data-aos-duration="2000">
+
+                    <div class="col-lg-12">
+                        <img src="@item.Image" alt="" class="img-proje">
+                    </div>
+
+                    <div class="col-12 mt-3 d-flex justify-content-between">
+                        <div class="text-white d-flex align-items-center">@item.Name</div>
+                        <svg color="#d8d9de" style="width: 25px;height: 25px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </div>
+
+                    <div class="col-12 mt-3" style="font-size: 15px;color: #d8d9de">@item.Description</div>
+
+                    <div class="col-12 mt-3 d-flex flex-wrap gap-2">
+                        <div class="pe-3 ps-3 pt-1 pb-1 rounded-4" style="border: 2px solid #21293e;color: #84e384">Html</div>
+                        <div class="pe-3 ps-3 pt-1 pb-1 rounded-4" style="border: 2px solid #21293e;color: #84e384">Css</div>
+                        <div class="pe-3 ps-3 pt-1 pb-1 rounded-4" style="border: 2px solid #21293e;color: #84e384">React</div>
+                        <div class="pe-3 ps-3 pt-1 pb-1 rounded-4" style="border: 2px solid #21293e;color: #84e384">.NetCore</div>
+                    </div>
+
+                </div>
+            }
+
+
+            <a href="#" class="text-decoration-none">
+                <div class="d-lg-none d-block" style="color: #804afa">
+                    View All Projects
+                    <svg style="width: 15px;height: 15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </div>
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</div>

@@ -15,4 +15,12 @@
 
 <!-- Skills -->
 
-@await Html.PartialAsync("_Skills");
+@await Html.PartialAsync("_Skills" , Model.skills);
+
+<!-- Projects -->
+
+@await Html.PartialAsync("_Projects" , Model.projects);
+
+<!-- Experience -->
+
+@await Html.PartialAsync("_Experience" , Model.experiences);
