@@ -12,12 +12,21 @@ namespace Entites
 
         [Key]
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "The Expertise Required")]
         [StringLength(200)]
         public string Expertise { get; set; }
-        [StringLength(400)]
+
+        [Required(ErrorMessage = "The Description Required")]
+        [MaxLength(600)]
         public string Description { get; set; }
+
+        [Required(ErrorMessage = "The NameCompany Required")]
         public string NameCompany { get; set; }
+
+        [Required(ErrorMessage = "The StartDate Required")]
         public DateTime StartData { get; set; }
+
         public DateTime? EndDate { get; set; }
 
     }

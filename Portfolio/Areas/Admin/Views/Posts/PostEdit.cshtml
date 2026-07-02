@@ -29,12 +29,14 @@
 
                 <div class="col-lg-5">
                     <label class="form-label">Name <span class="text-danger">*</span> </label>
-                    <input type="text" name="Name" value="@Model.Name" class="form-control" placeholder="example : Omid Ataei" />
+                    <input type="text" asp-for="Name" class="form-control" placeholder="example : Omid Ataei" />
+                    <p class="text-danger" style="font-size:17px">@Html.ValidationMessage("Name")</p>
                 </div>
 
                 <div class="col-lg-5">
                     <label class="form-label">Email <span class="text-danger">*</span></label>
-                    <input type="email" name="Email" value="@Model.Email" class="form-control" placeholder="example : omid@gmail.com">
+                    <input type="email" asp-for="Email" class="form-control" placeholder="example : omid@gmail.com">
+                    <p class="text-danger" style="font-size:17px;">@Html.ValidationMessage("Email")</p>
                 </div>
 
             </div>
@@ -43,11 +45,12 @@
 
                 <div class="col-lg-5">
                     <label class="form-label">Location <span class="text-danger">*</span> </label>
-                    <input type="text" name="Location" value="@Model.Location" class="form-control" placeholder="Example : Tehran,Iran" />
+                    <input type="text" asp-for="Location" class="form-control" placeholder="Example : Tehran,Iran" />
+                    <p class="text-danger" style="font-size:17px">@Html.ValidationMessage("Location")</p>
                 </div>
 
                 <div class="col-lg-5 form-check" style="margin-top: 40px">
-                    <input class="form-check-input" type="checkbox" name="Frelancer" value="true" @(Model.Frelancer ? "checked" : "") />
+                    <input class="form-check-input" asp-for="Frelancer" type="checkbox" />
                     <label class="form-check-label">
                         Are You Freelancer ?
                     </label>
@@ -57,7 +60,8 @@
 
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Description <span class="text-danger">*</span> </label>
-                <textarea name="Description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Explain about yourself">@Model.Description</textarea>
+                <textarea asp-for="Description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Explain about yourself">@Model.Description</textarea>
+                <p class="text-danger" style="font-size:17px;">@Html.ValidationMessage("Description")</p>
             </div>
 
             <input type="submit" value="Update" class="border-0 rounded-3" style="padding: 8px 30px 8px 30px;background-color: yellow" />

@@ -12,12 +12,21 @@ namespace Entites
 
         [Key]
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "First and last name are required")]
         [StringLength(150)]
         public string Name { get; set; }
+
+        [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Location is required")]
         public string Location { get; set; }
+
         public bool Frelancer { get; set; }
-        [StringLength(350)]
+
+        [Required(ErrorMessage = "Description is required")]
+        [MaxLength(600)]
         public string Description { get; set; }
 
     }

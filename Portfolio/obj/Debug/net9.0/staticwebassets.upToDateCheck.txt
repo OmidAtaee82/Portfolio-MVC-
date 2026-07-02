@@ -153,6 +153,7 @@ wwwroot\css\bootstrap.min.css
 wwwroot\css\ContentAdmin.css
 wwwroot\css\style.css
 wwwroot\img\14.jpg
+wwwroot\img\17.jpeg
 wwwroot\img\19.jpg
 wwwroot\img\2.jpg
 wwwroot\img\22.jpg

@@ -12,10 +12,16 @@ namespace Entites
 
         [Key]
         public int Id { get; set; }
-        [StringLength(200)]
+
+        [Required(ErrorMessage = "The Name Required")]
+        [StringLength(300)]
         public string Name { get; set; }
-        [StringLength(400)]
+
+        [Required(ErrorMessage = "The Description Required")]
+        [MaxLength(700)]
         public string Description { get; set; }
+
+        [Required(ErrorMessage = "The Image Required")]
         public string Image { get; set; }
 
     }

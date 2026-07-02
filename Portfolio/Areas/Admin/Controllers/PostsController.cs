@@ -44,7 +44,14 @@ namespace Portfolio.Areas.Admin.Controllers
         public IActionResult PostCreate(AboutMe model)
         {
 
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+
             _postService.AddPost(model);
+
             return RedirectToAction("Posts");
 
         }
@@ -62,6 +69,12 @@ namespace Portfolio.Areas.Admin.Controllers
         [Route("/admin/posts/edit/{id}")]
         public IActionResult PostEdit(AboutMe model)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             var getPost = _postService.GetPost(model.Id);
 
             if(getPost != null)

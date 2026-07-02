@@ -12,9 +12,16 @@ namespace Entites
 
         [Key]
         public string Id { get; set; }
+
+        [Required(ErrorMessage = "First and last name are required")]
         public string Name { get; set; }
+
         public string? Email { get; set; }
+
+        [Required(ErrorMessage = "The subject is required")]
         public string Subject { get; set; }
+
+        [Required(ErrorMessage = "The Message is required")]
         public string Message { get; set; }
 
     }
