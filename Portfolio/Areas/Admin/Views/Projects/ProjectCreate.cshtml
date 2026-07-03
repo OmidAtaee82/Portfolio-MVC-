@@ -33,6 +33,16 @@
             </div>
 
             <div class="mb-3">
+                <label class="form-label">Description <span class="text-danger">*</span> </label>
+                <select name="skillIds" class="form-select" multiple>
+                    @foreach(var option in ViewBag.skills)
+                    {
+                        <option value="@option.Id">@option.Name</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
                 <label class="form-label">Image <span class="text-danger">*</span> </label>
                 <input type="file" name="file" class="form-control" />
             </div>

@@ -10,10 +10,14 @@ namespace Portfolio.Areas.Admin.Controllers
 
         private readonly IWebHostEnvironment _env;
         protected readonly IProjectService _projectService;
+        protected readonly ISkillService _skillService;
+        protected readonly IProjectSkillService _psService;
 
-        public ProjectsController(IProjectService p , IWebHostEnvironment env)
+        public ProjectsController(IProjectService p , ISkillService s , IProjectSkillService ps ,  IWebHostEnvironment env)
         {
             _projectService = p;
+            _skillService = s;
+            _psService = ps;
             _env = env;
         }
 
@@ -49,16 +53,19 @@ namespace Portfolio.Areas.Admin.Controllers
         [Route("/admin/projects/create")]
         public IActionResult ProjectCreate()
         {
+            var skills = _skillService.GetAllSkills();
+            ViewBag.skills = skills;
+
             return View();
         }
 
 
         [HttpPost]
         [Route("/admin/projects/create")]
-        public IActionResult ProjectCreate(Projects model , IFormFile file)
+        public IActionResult ProjectCreate(Projects model , IFormFile file , List<int> skillIds)
         {
 
-            if(file != null)
+            if (file != null)
             {
 
                 string fileName = file.FileName;
@@ -74,6 +81,11 @@ namespace Portfolio.Areas.Admin.Controllers
             }
 
             _projectService.AddProject(model);
+
+            foreach (var skillId in skillIds)
+            {
+                _psService.AddProjectSkill(model.Id, skillId);
+            }
 
             return RedirectToAction("Projects");
         }

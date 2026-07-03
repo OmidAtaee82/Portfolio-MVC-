@@ -158,6 +158,7 @@ wwwroot\img\19.jpg
 wwwroot\img\2.jpg
 wwwroot\img\22.jpg
 wwwroot\img\23.jpg
+wwwroot\img\26.jpeg
 wwwroot\img\35.jpg
 wwwroot\img\4.jpg
 wwwroot\img\6.jpg

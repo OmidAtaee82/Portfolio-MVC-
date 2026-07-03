@@ -1,4 +1,5 @@
 ﻿using Entites;
+using Microsoft.EntityFrameworkCore;
 using ServiceContract;
 using System;
 using System.Collections.Generic;
@@ -21,14 +22,20 @@ namespace Service
 
         public List<Projects> GetAllProjects()
         {
-            
-            var result = _portfolioDb.Projects.Select(x => new Projects
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Description = x.Description,
-                Image = x.Image
-            }).ToList();
+
+            //var result = _portfolioDb.Projects.Select(x => new Projects
+            //{
+            //    Id = x.Id,
+            //    Name = x.Name,
+            //    Description = x.Description,
+            //    Image = x.Image
+            //}).ToList();
+
+            //return result;
+            var result = _portfolioDb.Projects
+                .Include(p => p.ProjectSkills)
+                .ThenInclude(ps => ps.Skill)
+                .ToList();
 
             return result;
 
@@ -90,7 +97,10 @@ namespace Service
 
             if(!string.IsNullOrEmpty(searchText))
             {
-                return _portfolioDb.Projects.Where(x=>x.Name.Contains(searchText)).ToList();
+                return _portfolioDb.Projects
+                    .Include(p=>p.ProjectSkills)
+                    .ThenInclude(ps=>ps.Skill)
+                    .Where(x=>x.Name.Contains(searchText)).ToList();
             }
             else
             {

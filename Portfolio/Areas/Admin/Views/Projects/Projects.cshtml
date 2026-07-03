@@ -40,6 +40,7 @@
                     <th class="th">Name</th>
                     <th class="th">Description</th>
                     <th class="th">Image</th>
+                    <th class="th">Skills</th>
                     <th class="th">Actions</th>
                 </tr>
             </thead>
@@ -60,6 +61,14 @@
                         <td class="td">
                             <img src="@item.Image" alt="" style="width: 30px;height: 30px">
                         </td>
+
+                        <td class="td">
+                            @foreach(var ps in item.ProjectSkills)
+                            {
+                                <span>@ps.Skill.Name</span>
+                            }
+                        </td>
+
                         <td class="td">
 
                             <div class="d-lg-flex gap-2">

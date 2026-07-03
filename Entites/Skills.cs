@@ -20,5 +20,7 @@ namespace Entites
         [Required(ErrorMessage = "The Image Required")]
         public string Image { get; set; }
 
+        public List<ProjectSkill> ProjectSkills { get; set; }
+
     }
 }
